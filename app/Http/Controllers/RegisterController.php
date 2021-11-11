@@ -18,7 +18,7 @@ class RegisterController extends Controller {
         $this->validate(request(), [
             'name' => 'required',
             'password' => 'required',
-            'dni' => 'required|confirmed',
+            'dni' => 'required',
             'email' => 'required|email',
         ]);
 
